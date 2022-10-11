@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Criar PDF";
+}
+<script src="~/ckeditor/ckeditor.js"></script>
+<div class="row">
+    <div class="col-md-12">
+        <div class="text-center">
+            <h2>Criar um arquivo PDF</h2>
+        </div>
+        <br />
+        <form method="post">
+            <textarea name="editor1" id="editor1" rows="80" cols="80">
+                
+            </textarea>
+            <br />
+            <div class="text-center">
+                <input type="submit" class="btn btn-success" value="Baixar" />
+            </div>
+            <script>
+                // <html>Substitua o<textarea id="editor1"> com um CKEditor</html>
+                // instância, usando a configuração padrão.
+                CKEDITOR.replace('editor1');
+            </script>
+        </form>
+    </div>
+</div>
